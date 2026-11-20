@@ -16,7 +16,7 @@ npm run dev
 
 Открыть **http://localhost:3000**. Для мутаций используйте именно `localhost`, не `127.0.0.1`: backend проверяет Origin. Backend по умолчанию: http://127.0.0.1:8000, Swagger: http://localhost:8000/docs.
 
-Backend-репозиторий располагается рядом: `../analyst-days-backend`. Запускайте его по собственному README; этот репозиторий backend не запускает и не изменяет. Публичная ссылка на репозиторий пока не предоставлена.
+Backend-репозиторий располагается рядом: `../analyst-days-backend`. Запускайте его по собственному README; этот репозиторий backend не запускает и не изменяет. [Backend на GitHub](https://github.com/filipov0991/analyst-days-backend).
 
 ## Настройка API
 
@@ -62,6 +62,8 @@ npm run build
 npm start
 ```
 
+`npm start` копирует статические ресурсы в standalone и запускает `.next/standalone/server.js`.
+
 Production-сервер также открывайте по http://localhost:3000. Порт 3000 должен быть свободен.
 
 ## Docker (для будущего размещения)
@@ -75,7 +77,7 @@ docker run --rm -p 3000:3000 analyst-days-frontend
 
 ## Текущий статус
 
-MVP реализован. Production build, TypeScript, ESLint и 10 браузерных frontend-тестов прошли. По вашему уточнению полная интеграция с backend оставлена на отдельный этап; проверка реальных cookie, БД и перезапуска сервера не завершена. Подробности — в [отчёте](docs/ui-checks.md).
+MVP реализован. Production build, TypeScript, ESLint и 10 браузерных frontend-тестов прошли. Совместная проверка с реальным backend завершена: cookie, конфликты, сохранение, перезапуск и восстановление после отключения проверены. [Отчёт интеграции](docs/integration-checks.md). Подробности — в [отчёте](docs/ui-checks.md).
 
 ## Структура
 
