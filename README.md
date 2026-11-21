@@ -94,3 +94,7 @@ MVP реализован. Production build, TypeScript, ESLint и 10 брауз�
 - [Фактический контекст v1](docs/context-v1.md)
 - [Отчёт UI-проверок](docs/ui-checks.md)
 - [Значимые промпты](docs/prompts.md)
+
+## Совместный запуск в Docker
+
+Полный стек проверен в Docker. Основной `compose.yaml` хранится в соседнем backend-репозитории: [инструкция](https://github.com/filipov0991/analyst-days-backend/blob/main/docs/docker.md). Из `../analyst-days-backend` выполните `docker compose up --build -d`; затем откройте http://localhost:3000. Репозитории должны лежать рядом.
